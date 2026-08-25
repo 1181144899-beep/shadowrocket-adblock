@@ -13,6 +13,10 @@ DOMAIN,giri.moemoekyu.com,DIRECT
 # 仅让 ani 页面调用的地区探测请求直连，避免代理出口地区触发站方跳转
 DOMAIN,cloudflare.com,DIRECT
 
+# > Girigirilove 页面加载依赖
+DOMAIN-SUFFIX,polyfill-js.cn,DIRECT
+DOMAIN-SUFFIX,f.clarity.ms,DIRECT
+
 # > 用户提供的指定直连域名
 DOMAIN-SUFFIX,acc.skyysw.com,DIRECT
 DOMAIN-SUFFIX,vip1.lz-cdn6.com,DIRECT
