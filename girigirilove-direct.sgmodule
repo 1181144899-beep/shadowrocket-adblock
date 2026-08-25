@@ -31,3 +31,14 @@ DOMAIN-SUFFIX,cdn4.rplay4.com,DIRECT
 # 日志分析确认的播放器和统计域名直连候选
 DOMAIN,analytics.adjust.io,DIRECT
 DOMAIN,union.dplayerstatic.com,DIRECT
+
+# 日志中视频站资源和接口的直连候选
+DOMAIN,pic.dxbkw.com,DIRECT
+DOMAIN,img.leshitp.top,DIRECT
+DOMAIN,images.67c6c7a.com,DIRECT
+DOMAIN,haiwaiapi.1fc8ab0.com,DIRECT
+DOMAIN,api.7gmsut2m.com,DIRECT
+DOMAIN,api.r2uhs2.com,DIRECT
+DOMAIN,sdapi.gmcztd.com,DIRECT
+DOMAIN,rg.w57cy8y.com,DIRECT
+DOMAIN,fengbao12.com,DIRECT
