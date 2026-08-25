@@ -27,3 +27,7 @@ DOMAIN-SUFFIX,ddgksf2013.top,DIRECT
 DOMAIN-SUFFIX,cos.hxx2023.cc,DIRECT
 DOMAIN-SUFFIX,qsvip.hxx2023.cc,DIRECT
 DOMAIN-SUFFIX,cdn4.rplay4.com,DIRECT
+
+# 日志分析确认的播放器和统计域名直连候选
+DOMAIN,analytics.adjust.io,DIRECT
+DOMAIN,union.dplayerstatic.com,DIRECT
