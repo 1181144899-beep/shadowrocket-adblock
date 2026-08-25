@@ -99,6 +99,13 @@ DOMAIN,sdk.1rtb.net,REJECT
 ^https?:\/\/app\.hbooker\.com\/setting\/get_startpage_url_list - reject-200
 # > cainiao
 ^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(show|mshow)\.cn\/ - reject-200
+# 日志确认的菜鸟广告资源和广告接口
+^https?:\/\/guoguo-cdn\.cainiao\.com\/cnn_guide_ads\/.*\/guide_ads_main_page\/bundle\.zip - reject-200
+^https?:\/\/netflow-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(batch\.show\.v2|index|mshow|show)\.cn\/ - reject-200
+# > xiaocanhuishenghuo
+# 精确拦截广告配置和广告内容接口，不拦截小蚕业务接口
+^https?:\/\/ad\.baihemob\.com\/(infoConfig|checkCd|setGInfo)\/ - reject-200
+^https?:\/\/inner\.baihemob\.com\/ad2(\/|\?|$) - reject-200
 ^https?:\/\/iyes\.youku\.com\/uts/v\d\/start - reject-200
 # > csdn
 ^https?:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v\d\/assemble\/list\/pub\/channel\/app_open_screen_ad - reject-200
@@ -689,6 +696,7 @@ https://support.you.163.com/appversync/check.do - reject-200
 ^https?:\/\/siteapi\.zaixs\.com\/.*\/start_ad - reject-200
 # > xianyu
 ^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop.*splash\.ads - reject-200
+^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash\.async\.ads\/ - reject-200
 # > xinqiutiyu
 ^https?:\/\/api\.ssp\.xcultur\.com\/api\/v\d\/ad - reject
 # > xiaotundangjia
