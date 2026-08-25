@@ -1,10 +1,29 @@
-#!name=Girigirilove直连修复
-#!desc=仅将 Girigirilove 相关域名设置为直连，不修改广告拦截规则
+#!name=指定域名直连合集
+#!desc=整合 Girigirilove、Cloudflare 地区检测和用户提供的指定域名直连规则
 #!category=网络访问
 
 [Rule]
-# > girigirilove
-# 精确直连主站及其已确认的子域名
+# > Girigirilove 主站
 DOMAIN-SUFFIX,girigirilove.top,DIRECT
 DOMAIN-SUFFIX,girigirilove.com,DIRECT
 DOMAIN-SUFFIX,girigirilove.icu,DIRECT
+
+# > Cloudflare 地区检测
+# 仅让 ani 页面调用的地区探测请求直连，避免代理出口地区触发站方跳转
+DOMAIN,cloudflare.com,DIRECT
+
+# > 用户提供的指定直连域名
+DOMAIN-SUFFIX,acc.skyysw.com,DIRECT
+DOMAIN-SUFFIX,vip1.lz-cdn6.com,DIRECT
+DOMAIN-SUFFIX,v16m-default.akamaized.net,DIRECT
+DOMAIN-SUFFIX,www.emw5es6.com,DIRECT
+DOMAIN-SUFFIX,api.xkpcth.com,DIRECT
+DOMAIN-SUFFIX,doh.pub,DIRECT
+DOMAIN-SUFFIX,api.gq89em.com,DIRECT
+DOMAIN-SUFFIX,resource.nj82wbp.top,DIRECT
+DOMAIN-SUFFIX,go.mayzaent.com,DIRECT
+DOMAIN-SUFFIX,yzzy.play-cdn10.com,DIRECT
+DOMAIN-SUFFIX,ddgksf2013.top,DIRECT
+DOMAIN-SUFFIX,cos.hxx2023.cc,DIRECT
+DOMAIN-SUFFIX,qsvip.hxx2023.cc,DIRECT
+DOMAIN-SUFFIX,cdn4.rplay4.com,DIRECT
