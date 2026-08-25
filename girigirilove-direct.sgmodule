@@ -1,0 +1,10 @@
+#!name=Girigirilove直连修复
+#!desc=仅将 Girigirilove 相关域名设置为直连，不修改广告拦截规则
+#!category=网络访问
+
+[Rule]
+# > girigirilove
+# 精确直连主站及其已确认的子域名
+DOMAIN-SUFFIX,girigirilove.top,DIRECT
+DOMAIN-SUFFIX,girigirilove.com,DIRECT
+DOMAIN-SUFFIX,girigirilove.icu,DIRECT
