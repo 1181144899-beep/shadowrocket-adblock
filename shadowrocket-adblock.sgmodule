@@ -18,6 +18,33 @@ DOMAIN-SUFFIX,adlog-ztjy.szy.cn,REJECT
 DOMAIN,zlsdk.1rtb.net,REJECT
 DOMAIN,sdk.1rtb.net,REJECT
 
+# > 红果短剧广告
+# 保留必要的图片放行，避免素材加载异常
+DOMAIN,p3-ad-sign.byteimg.com,DIRECT
+
+# 红果广告视频
+DOMAIN-WILDCARD,*-reading-ad.qznovelvod.com,REJECT-DROP
+DOMAIN-WILDCARD,*-iosreadingvideo.qznovelvod.com,REJECT-DROP
+DOMAIN-WILDCARD,*-misc-lq.fqnovel.com,REJECT-DROP
+DOMAIN-WILDCARD,*-ad-sign.byteimg.com,REJECT-DROP
+
+# 字节系广告接口及跳转
+DOMAIN,ads3-normal-hl.zijieapi.com,REJECT-DROP
+DOMAIN,ads3-normal-lf.zijieapi.com,REJECT-DROP
+DOMAIN,ads3-normal-lq.zijieapi.com,REJECT-DROP
+DOMAIN,ads5-normal-hl.zijieapi.com,REJECT-DROP
+DOMAIN,ads5-normal-lf.zijieapi.com,REJECT-DROP
+DOMAIN,ads5-normal-lq.zijieapi.com,REJECT-DROP
+DOMAIN,dig.bdurl.net,REJECT-DROP
+
+# 直播/电商广告素材
+DOMAIN,p3-webcast.douyinpic.com,REJECT-DROP
+DOMAIN-WILDCARD,*-item.ecombdimg.com,REJECT-DROP
+DOMAIN-WILDCARD,*-aio.ecombdimg.com,REJECT-DROP
+
+# 日志中发现的 IP 直连 FLV 广告流
+IP-CIDR,223.109.238.56/32,REJECT-DROP,no-resolve
+
 [URL Rewrite]
 # > Version
 ^https?:\/\/2026.06.29/c415/v2.0.647 - reject-200
