@@ -130,7 +130,7 @@ IP-CIDR,223.109.238.56/32,REJECT-DROP,no-resolve
 ^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(show|mshow)\.cn\/ - reject-200
 # 日志确认的菜鸟广告资源和广告接口
 ^https?:\/\/guoguo-cdn\.cainiao\.com\/cnn_guide_ads\/.*\/guide_ads_main_page\/bundle\.zip - reject-200
-^https?:\/\/netflow-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(batch\.show\.v2|index|mshow|show)\.cn\/ - reject-200
+^https?:\/\/netflow-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(batch\.show\.v2|index|mshow|show)\.cn\/ - reject-dict
 # > xiaocanhuishenghuo
 # 精确拦截广告配置和广告内容接口，不拦截小蚕业务接口
 ^https?:\/\/ad\.baihemob\.com\/(infoConfig|checkCd|setGInfo)\/ - reject-200
