@@ -3,11 +3,6 @@
 #!category=网络访问
 
 [Rule]
-# > Girigirilove 主站
-DOMAIN-SUFFIX,girigirilove.top,DIRECT
-DOMAIN-SUFFIX,girigirilove.com,DIRECT
-DOMAIN-SUFFIX,girigirilove.icu,DIRECT
-DOMAIN,giri.moemoekyu.com,DIRECT
 
 # > Cloudflare 地区检测
 # 仅让 ani 页面调用的地区探测请求直连，避免代理出口地区触发站方跳转
