@@ -38,6 +38,7 @@ DOMAIN,ads5-normal-lq.zijieapi.com,REJECT-DROP
 DOMAIN,dig.bdurl.net,REJECT-DROP
 # 日志确认的红果广告域名
 DOMAIN,adx-ad-prod.wkanx.com,REJECT-DROP
+DOMAIN-SUFFIX,dahhxxttxs.com,REJECT-DROP
 
 # 直播/电商广告素材
 DOMAIN,p3-webcast.douyinpic.com,REJECT-DROP
